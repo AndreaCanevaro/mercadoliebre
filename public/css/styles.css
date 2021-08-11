@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+}
+div.top-header p{
+    font-size: 18px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+    padding: auto;
+   
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    max-width: 30px;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    /*height: 30px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 30px;*/
+}
+
+article div.main-article{
+    width: 100%;
+    position: relative;
+}
+article.description{
+    display: none;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+}
+
+main section article{
+    background-color: #fff;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+main section article i{
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+transition: 850ms;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+footer div{
+    padding: 15px;
+}
+footer div i{
+    color: #1259c3;
+    background-color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer .copyright{
+    color: #666;;
+    text-align: left;
+}
+article {
+    margin: 10px;
+}
+article div {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+.mainarticle .description{
+    margin-bottom: 15px;
+}
+.create-form{
+    padding: 20px 15px;
+    margin-top: 240px;
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 90%;
+    padding: 8px;
+}
+.general-button{
+    background-color: #1259c3;
+    color: white;
+    width: 20%;
+    padding: 8px;
+    border-radius: 5px;
+}
+.login-button{
+    width: 100%;
+    background-color: #1259c3; 
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: auto;
+}
+.register-header{
+    position: fixed;
+    top: 0px;
+}
+
+@media (max-width: 360px){
+    article .description{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }  
+}
+
+@media (min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    div.burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .main-navbar a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .main-navbar ul .navbar-1{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .main-navbar ul .navbar-2{
+        display: flex;
+        justify-content: flex-end;
+    }
+   div.products{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    article{
+        width: 40%;
+    }
+}
+@media (min-width: 769px){
+    article{
+        width: 20%;
+    }
+    article h4.description{
+        color: white;
+        margin-right: 15px;
+        transition: 400ms;
+    }
+  
+    article h4.description:hover{
+            color: #666;    
+    }
+    main section article i{
+        margin: auto;
+    }
+    main section article i:hover{
+        transform: rotate(-90deg);
+    }
+    footer section{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    footer .copyright{
+        margin-top: 20px;
+    }
+
+    .login-button:hover{
+        background-color: #0022AA;
+    }
+}
